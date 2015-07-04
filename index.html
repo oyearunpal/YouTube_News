@@ -30,7 +30,7 @@
 
     <nav>
       <core-toolbar>
-        <span>Single Page Polymer</span>
+        <span>Youtube News India</span>
       </core-toolbar>
       <core-menu valueattr="hash" selected="{{route}}" selectedModel="{{selectedPage}}"
                  on-core-select="{{menuItemSelected}}">
@@ -43,10 +43,13 @@
       </core-menu>
     </nav>
 
-    <core-toolbar tool flex>
+    <core-toolbar tool flex >
       <div flex>{{selectedPage.page.name}}</div>
       <core-icon-button icon="refresh"></core-icon-button>
-      <core-icon-button icon="add"></core-icon-button>
+      <core-tooltip label="Watch the online 24 X 7 News on youtube. Note before switching to another channel stop previous video. " position="left" >
+       <core-icon-button icon="info"></core-icon-button>
+</core-tooltip>
+
     </core-toolbar>
 
     <div layout horizontal center-center fit>
@@ -59,8 +62,11 @@
 
             <iframe id="videos" src="{{page.idv}}"  style=" width: 100%; height:100%;" frameborder="0" allowfullscreen  > </iframe></div>
           </section>
+
         </template>
+
       </core-animated-pages>
+
     </div>
 
   </core-scaffold>

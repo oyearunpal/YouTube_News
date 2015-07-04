@@ -6,7 +6,7 @@ var DEFAULT_ROUTE = 'one';
 var template = document.querySelector('#t');
 
 template.pages = [
-  {name: 'DD NEWS', hash: 'one',idv: 'https://www.youtube.com/embed/-XPmCkMIhFw'},
+  {name: 'DD NEWS', hash: 'one',idv: 'https://www.youtube.com/embed/q1PtGqyDpCM'},
   {name: 'Headlines Today', hash: 'two',idv: 'https://www.youtube.com/embed/lApfFjP5R9g'},
   {name: 'Aajtak', hash: 'three',idv: 'https://www.youtube.com/embed/JckHthtSb5U'},
   // {name: 'Focus News', hash: 'four',idv: 'https://www.youtube.com/embed/iIzNNsebbrk'},
@@ -73,5 +73,11 @@ template.menuItemSelected = function(e, detail, sender) {
 
 })();
 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+ga('create', 'UA-61323769-2', 'auto');
+ga('send', 'pageview');
 
